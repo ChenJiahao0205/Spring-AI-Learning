@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: spring-ai-03-transcription
+  ai:
+    openai:
+      # 调用key(这里仅仅是为了隐藏数据，将key放入到了环境变量中)
+      api-key: ${spring.ai.openai.api-key}
+      # 接口路径(这里仅仅是为了隐藏地址，将base-url放入到了环境变量中)
+      base-url: ${spring.ai.openai.base-url}
+
+server:
+  servlet:
+    context-path: /spring-ai
