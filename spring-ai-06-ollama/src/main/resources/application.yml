@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: spring-ai-06-ollama
+  ai:
+    ollama:
+      # 访问ollama监听端口
+      base-url: http://localhost:11434
+      chat:
+        options:
+          model: qwen:0.5b
+
+server:
+  servlet:
+    context-path: /spring-ai
